@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amateur Banking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Test Bank</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Account Balance</h2>
+            <p id="account-balance">Balance: $0.00</p>
+        </section>
+
+        <section>
+            <h2>Create an Account</h2>
+            <form id="create-account-form">
+                <label for="account-name">Account Name:</label>
+                <input type="text" id="account-name" required>
+                <label for="initial-deposit">Initial Deposit:</label>
+                <input type="number" id="initial-deposit" min="0" required>
+                <button type="submit">Create Account</button>
+            </form>
+            <div id="account-success" class="hidden">Account created successfully!</div>
+        </section>
+
+        <section>
+            <h2>Deposit</h2>
+            <form id="deposit-form">
+                <label for="deposit-amount">Amount to Deposit:</label>
+                <input type="number" id="deposit-amount" min="0" required>
+                <button type="submit">Deposit</button>
+            </form>
+            <div id="deposit-success" class="hidden">Deposit successful!</div>
+        </section>
+
+        <section>
+            <h2>Withdraw</h2>
+            <form id="withdraw-form">
+                <label for="withdraw-amount">Amount to Withdraw:</label>
+                <input type="number" id="withdraw-amount" min="0" required>
+                <button type="submit">Withdraw</button>
+            </form>
+            <div id="withdraw-success" class="hidden">Withdrawal successful!</div>
+        </section>
+
+        <section>
+            <h2>Fund Transfer</h2>
+            <form id="transfer-form">
+                <label for="transfer-amount">Amount to Transfer:</label>
+                <input type="number" id="transfer-amount" min="0" required>
+                <label for="receiver-name">Recipient Account Name:</label>
+                <input type="text" id="receiver-name" required>
+                <button type="submit">Transfer</button>
+            </form>
+            <div id="transfer-success" class="hidden">Transfer successful!</div>
+        </section>
+
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Simple Banking System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
